@@ -1,0 +1,29 @@
+{
+    "classification_model" : "random_forest",
+    "feature_set" : [["Light", "CO2"], ["Light", "Humidity"]],
+    "feature_info" : {
+        "Temperature" : "continuous",
+        "Humidity" : "continuous",
+        "Light" : "continuous",
+        "CO2" : "continuous",
+        "HumidityRatio" : "continuous",
+        "Weekend" : "0,1",
+        "WorkingHour" : "0,1"
+    },
+    "preprocessed_data" : {
+        "train" : "data/processed/training.csv",
+        "test" : "data/processed/test.csv",
+        "validation" : "data/processed/validate.csv"
+    },
+    "extracted_data" : {
+        "attributes" : "data/extracted/attributes.csv",
+        "train" : "data/extracted/training.csv",
+        "test" : "data/extracted/test.csv",
+        "validation" : "data/extracted/validate.csv"
+    },
+    "bag_size_percent" : 10,
+    "num_trees" : 3,
+    "boosting" : true,
+    "display_trees" : true,
+    "verbosity" : 3
+}
